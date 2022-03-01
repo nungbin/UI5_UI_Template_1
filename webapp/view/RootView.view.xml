@@ -3,9 +3,97 @@
         <App id="app">
             <pages>
                 <Page id="page" title="{i18n>title}">
+                    <customHeader>
+                        <Toolbar width="100%" id="toolbar1">
+                            <content>
+                                <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel1_1646175231877">
+                                    <headerToolbar>
+                                        <Toolbar id="toolbar2">
+                                            <Title text="Header"/>
+                                            <ToolbarSpacer/>
+                                            <Button icon="sap-icon://settings"/>
+                                            </Toolbar>
+                                        
+                                    </headerToolbar>
+                                    <content>
+                                        <DatePicker xmlns="sap.m" id="picker0_1646175252264"/>
+                                        </content>
+                                    </Panel>
+                            </content>
+                        </Toolbar>
+                    </customHeader>
                     <content>
                         <Label text="Label" width="100%" id="label0"/>
+                        <Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel1">
+                            <headerToolbar>
+                                <Toolbar id="toolbar1_1646168548826">
+                                    <Title text="Header"/>
+                                    <ToolbarSpacer/>
+                                    <Button icon="sap-icon://settings"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <content>
+                                <Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"/>
+                            </content>
+                        </Panel>
+
+                        <Panel xmlns="sap.m" width="auto" expandable="true" expanded="false" id="panel2">
+                            <headerToolbar>
+                                <Toolbar id="toolbar2_1646168548826">
+                                    <Title text="Header"/>
+                                    <ToolbarSpacer/>
+                                    <Button icon="sap-icon://settings"/>
+                                </Toolbar>
+                            </headerToolbar>
+                            <content>
+                                <sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
+                                    <sap.ui.layout.form:formContainers>
+                                        <sap.ui.layout.form:FormContainer title="Title" id="container0">
+                                            <sap.ui.layout.form:formElements>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element0">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input0"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element2">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input2"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element3">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input3"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                            </sap.ui.layout.form:formElements>
+                                        </sap.ui.layout.form:FormContainer>
+                                        <sap.ui.layout.form:FormContainer title="Title" id="container1">
+                                            <sap.ui.layout.form:formElements>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element1">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input1"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                            </sap.ui.layout.form:formElements>
+                                        </sap.ui.layout.form:FormContainer>
+                                    </sap.ui.layout.form:formContainers>
+                                    <sap.ui.layout.form:layout>
+                                        <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+                                    </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+                            </content>
+                        </Panel>
+
                     </content>
+                    <footer>
+                        <Bar id="bar0">
+                            <contentRight>
+                                <RadioButton xmlns="sap.m" groupName="GroupA" text="Option" id="button0"/>
+                            </contentRight>
+                        <contentLeft>
+                            <Button xmlns="sap.m" text="Button" id="button1"/>
+                        </contentLeft>
+                        </Bar>
+                    </footer>
                 </Page>
             </pages>
         </App>
