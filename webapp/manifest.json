@@ -87,22 +87,36 @@
       },
       "routes": [
         {
-          "name": "RouteRootView",
-          "pattern": "RouteRootView",
+          "name": "View1",
+          "pattern": "",
           "target": [
-            "TargetRootView"
+            "View1"
+          ]
+        },
+        {
+          "name": "View2",
+          "pattern": "view2/{id}",
+          "target": [
+            "View2"
           ]
         }
-      ],
+    ],
       "targets": {
-        "TargetRootView": {
+        "View1": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "RootView",
-          "viewName": "RootView"
+          "viewId": "View1",
+          "viewName": "View1"
+        },
+        "View2": {
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewId": "View2",
+            "viewName": "View2"
         }
-      }
+    }
     },
     "rootView": {
       "viewName": "ui5uitemplate1.view.RootView",

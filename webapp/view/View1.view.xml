@@ -1,0 +1,69 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5uitemplate1.controller.View1">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <Panel xmlns="sap.m" width="auto" expandable="true" expanded="false" id="panel2">
+                            <headerToolbar>
+                            </headerToolbar>
+                            <content>
+                                <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+                                    <sap.ui.layout.form:formContainers>
+                                        <sap.ui.layout.form:FormContainer title="Title" id="container0">
+                                            <sap.ui.layout.form:formElements>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element0">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input0"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element2">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input2"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element3">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input3"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                            </sap.ui.layout.form:formElements>
+                                        </sap.ui.layout.form:FormContainer>
+                                        <sap.ui.layout.form:FormContainer title="Title" id="container1">
+                                            <sap.ui.layout.form:formElements>
+                                                <sap.ui.layout.form:FormElement label="Label" id="element1">
+                                                    <sap.ui.layout.form:fields>
+                                                        <Input width="100%" id="input1"/>
+                                                    </sap.ui.layout.form:fields>
+                                                </sap.ui.layout.form:FormElement>
+                                            </sap.ui.layout.form:formElements>
+                                        </sap.ui.layout.form:FormContainer>
+                                    </sap.ui.layout.form:formContainers>
+                                    <sap.ui.layout.form:layout>
+                                        <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+                                    </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+                            </content>
+                        </Panel>
+                    </content>
+                    <footer>
+                        <Bar id="bar0">
+                            <contentLeft>
+                                <Button xmlns="sap.m" text="Second Screen" id="button1" press=".goView2"/>
+                            </contentLeft>
+                            <contentRight>
+                                <RadioButton xmlns="sap.m" groupName="GroupA" text="Option" id="button0"/>
+                            </contentRight>
+                        </Bar>
+                    </footer>
+                <customHeader>
+                    <Bar id="bar4">
+                        <contentLeft>
+                            <DatePicker xmlns="sap.m" id="picker0"/>
+                        </contentLeft>
+                    </Bar>
+                </customHeader>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

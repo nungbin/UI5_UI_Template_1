@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5uitemplate1.controller.View2" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <Label text="Second Screen" width="100%" id="label0"/>
+                    </content>
+                    <customHeader>
+                        <Bar id="bar0">
+                            <contentLeft>
+                                <Button xmlns="sap.m" text="Back to Screen1" id="btnBackScrn1" press=".goView1"/>
+                            </contentLeft>
+                        </Bar>
+                    </customHeader>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
